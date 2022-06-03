@@ -1,0 +1,42 @@
+/*Inicio de menu*/
+a{
+    color: #ffffff;
+    
+}
+ul{
+    list-style-type: none;
+}
+.navega1{
+    background-color:#b3303000;
+}
+.nav-main{
+    font-size:17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    background-color:#B33030;
+    /*position: fixed;*/ 
+}
+.logo{
+    width: 50px; 
+}
+.nav-main ul{
+    display: flex;
+}
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul.nav-menu{
+    flex:1;
+    margin-left: 20px;
+     
+}
+.nav-main ul li a{ /*Agrega entre las opciones del menú*/ 
+    padding: 2px;
+}
+.nav-main ul li a:hover{ /*Agrega el efecto al pasar el maus sobre el menú*/ 
+    border-bottom: 2px solid #ffffff;
+}
+/*Fin de menu*/

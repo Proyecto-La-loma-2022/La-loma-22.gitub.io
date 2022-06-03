@@ -1,0 +1,75 @@
+
+    .form{
+		width: 100%;
+		height: 50px;
+		max-width: 400px;
+		position: relative;
+		overflow: hidden;
+	}
+	.form input{
+		width: 100%;
+		height: 100%;
+		background: none;
+		color: #fff;
+		padding-top: 20px;
+		border: none;
+		outline: 0px;
+	}
+	.form .name-label{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		pointer-events: none;
+		border-bottom: 1px solid #c7c7c7;
+	}
+	.form .name-label:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -1px;
+		width: 100%;
+		height: 100%;
+		border-bottom: 3px solid #2ecece;
+		transform: translateX(-100%);
+		transition: all 0.3s ease;
+	}
+	.name-text{
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+		transition: all 0.3s ease;
+		color: #fff;
+	}
+	.form input:focus + .name-label .name-text,.form input:valid + .name-label .name-text{/*Hace el efecto de subir nombre, ademas Valida si el usario ha introducido información, si es el caso mantiene la animación*/
+		transform: translateY(-150%);
+		font-size: 14px;
+		color: #2ecece;
+	}
+	.form input:focus + .name-label:after, .form input:valid + .name-label:after{/*Agrega efecto de movimiento a la linea*/
+		transform: translateX(0%);
+	}
+	@media only screen and (min-width:320px) and (max-width:768px){
+	 .form{
+		width:85%;
+	}
+		}
+    .nombre{
+        position: absolute;
+        top:73%;
+        left:45%;
+    }
+	.nombre button{
+		bottom: -1px;
+		border-bottom: 3px solid #2ecece;
+		background: none;
+		width: 100%;
+		height: 100%;
+		background: none;
+		color: #fff;
+		padding-top: 20px;
+		border: none;
+		outline: 0px;
+		
+	}
